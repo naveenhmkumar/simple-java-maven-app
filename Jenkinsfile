@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                 mvn -B -DskipTests clean package
+                 mvn clean install
                 '''
             }
         }
