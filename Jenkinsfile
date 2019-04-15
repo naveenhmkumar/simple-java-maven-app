@@ -6,7 +6,7 @@ pipeline{
            agent { label 'node2' }
            steps {
               sh '''
-              mvn --version
+              mvn clean install
               '''
            }
         }
