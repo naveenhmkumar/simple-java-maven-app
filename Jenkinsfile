@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                docker ps
+                mkdir naveen_node2
                 '''
             }
         }
