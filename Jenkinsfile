@@ -7,8 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                docker run -p 80:8081 naveenhm/nginx10
-                docker ps
+                ls
                 '''
             }
         }
