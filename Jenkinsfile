@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage('Build') {
@@ -7,9 +7,14 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                ls
                 '''
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'This will run only if successful'
         }
     }
 }
