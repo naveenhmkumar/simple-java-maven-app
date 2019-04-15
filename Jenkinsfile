@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                ls
+                ssh node2
                 whoami
                 '''
             }
