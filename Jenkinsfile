@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Build'){
             
-           agent { lable 'node2' }
+           agent { label 'node2' }
            steps {
               sh '''
               mvn --version
