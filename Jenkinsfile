@@ -7,8 +7,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                ssh node2
-                whoami
+                docker run -p 80:8081 naveenhm/nginx10
+                docker ps
                 '''
             }
         }
