@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                mkdir naveen_node2
+                mvn --version
                 '''
             }
         }
