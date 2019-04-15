@@ -7,6 +7,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
+                ls
+                whoami
                 '''
             }
         }
