@@ -11,15 +11,18 @@ pipeline {
                 '''
             }
         }
-        stage (' static Code analysis') {
-            agent { label 'node2' }
-            steps {
-                 echo 'analysising'
-                 sh '''
-                 ls
-                 '''
-            }
-        }
+       stage('run-parallel-branches') {
+  steps {
+    parallel(
+      a: {
+        echo "This is branch a"
+      },
+      b: {
+        echo "This is branch b"
+      }
+    )
+  }
+}
         stage (' Deploying to Prodest') {
             any{
             steps {
