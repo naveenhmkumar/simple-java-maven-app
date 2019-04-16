@@ -21,6 +21,7 @@ pipeline {
             }
         }
         stage (' Deploying to Prodest') {
+            agent { any}
             steps {
                 echo 'Deployment'
                 sh '''
