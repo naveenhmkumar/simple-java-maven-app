@@ -11,6 +11,7 @@ pipeline {
                  mvn clean install
                  docker build -t naveenhm/nginx3 .
                  docker push naveenhm/nginx3
+                 docker login -u naveenhm -u Naveenh_234
                 '''
             }
         }
