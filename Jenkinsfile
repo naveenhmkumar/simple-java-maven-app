@@ -23,16 +23,7 @@ pipeline {
     )
   }
 }
-        stage (' Deploying to Prodest') {
-            any{
-            steps {
-                echo 'Deployment'
-                sh '''
-                whoami
-                '''
-            }
-            }
-        }
+      
         
     }
    
