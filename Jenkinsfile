@@ -11,7 +11,7 @@ pipeline {
                 '''
             }
         }
-        stage(' static Code analysis'){
+        stage (' static Code analysis') {
             agent { label 'node2' }
             steps {
                  echo 'analysising'
