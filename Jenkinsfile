@@ -21,12 +21,13 @@ pipeline {
             }
         }
         stage (' Deploying to Prodest') {
-            agent { any}
+            any{
             steps {
                 echo 'Deployment'
                 sh '''
                 whoami
                 '''
+            }
             }
         }
         
