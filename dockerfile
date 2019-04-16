@@ -1,2 +1,2 @@
 FROM naveenhm/nginx10:v5
-COPY . /usr/share/html/
+COPY /home/ec2-user /usr/share/html/
