@@ -7,6 +7,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
+                 pwd
                  mvn clean install
                  docker build -t naveenhm/nginx3 .
                  docker push naveenhm/nginx3
