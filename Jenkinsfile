@@ -20,11 +20,16 @@ pipeline {
                  '''
             }
         }
+        stage (' Deploying to Prodest') {
+            steps {
+                echo 'Deployment'
+                sh '''
+                whoami
+                '''
+            }
+        }
+        
     }
    
-    post {
-        success {
-            echo 'This will run only if successful'
-        }
-    }
+   
 }
