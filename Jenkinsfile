@@ -9,7 +9,7 @@ pipeline {
                 sh '''
                  pwd
                  mvn clean install
-                 docker build -t naveenhm/nginx3 .
+                 docker build -t naveenhm/nginx3:{env.BUILD_NUMBER} .
                  docker push naveenhm/nginx3
                 '''
             }
